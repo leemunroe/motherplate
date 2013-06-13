@@ -1,0 +1,35 @@
+.aligncenter{
+  text-align:center;
+}
+
+.alignright{
+	text-align:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.nolist{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+}
+
+.valign{
+	vertical-align:middle;
+}
+
+hr{
+	border:none;
+	border-bottom:1px solid #ddd;
+	margin:$padding 0;
+}

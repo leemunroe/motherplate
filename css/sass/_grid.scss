@@ -1,0 +1,37 @@
+// 12 Column fluid and responsive grid
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
+	display: block;
+	margin-bottom: $padding;
+}
+
+// Grid columns are stacked until the display size is greater than min-width
+
+@media (min-width: 480px) {
+  
+  .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
+		float: left;
+		margin-right: 2.1277%;
+		margin-bottom: 0;
+	}
+
+	.span1{ width: 6.3829%; }
+	.span2{ width: 14.8936%; }
+	.span3{ width: 23.4042%; }
+	.span4{ width: 31.9148%; }
+	.span5{ width: 40.4255%; }
+	.span6{ width: 48.9362%; }
+	.span7{ width: 57.4468%; }
+	.span8{ width: 65.9574%; }
+	.span9{ width: 74.468%; }
+	.span10{ width: 82.9787%; }
+	.span11{ width: 91.4891%; }
+
+	.last{ margin-right: 0; }
+}

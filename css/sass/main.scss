@@ -1,0 +1,35 @@
+// Use Compass
+@import "compass";
+
+// Reset using Normalize
+@import "reset";
+
+// Set variables and reusable mixins
+@import "config";
+@import "mixins";
+
+// Import typical layout sass modules
+@import "grid";
+@import "type";
+@import "media";
+@import "links";
+@import "tables";
+@import "forms";
+@import "other";
+
+// Use Font Awesome for icons
+@import "font-awesome/scss/font-awesome.scss";
+
+// Specific project styles, add any section specific sass modules here
+@import "layout";
+
+// Additional styles to think about
+@import "responsive";
+@import "retina";
+@import "print";
+
+// If IE support is needed
+@import "ie";
+
+// For anything quick and dirty that needs thrown in
+@import "shame";
