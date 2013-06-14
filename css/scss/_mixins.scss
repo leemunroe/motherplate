@@ -12,5 +12,5 @@
 }
 
 .clearfix, .group{
-  @extend clearfix;
+  @include clearfix;
 }

@@ -3,5 +3,7 @@
 }
 
 @media screen and (max-width: 480px) {
-	// 480px and below styles here
+	body{
+		overflow-x:hidden;
+	}
 }
