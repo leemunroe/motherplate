@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Motherplate</h1>
-        <p>A bare bones SASS HTML5 CSS3 responsive framework</p>
+        <p>A bare bones SCSS HTML5 CSS3 responsive framework</p>
 
         <p class="view"><a href="https://github.com/leemunroe/motherplate">View the Project on GitHub <small>leemunroe/motherplate</small></a></p>
 
@@ -28,37 +28,134 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="motherplate-a-scss-html5-css3-responsive-boilerplate" class="anchor" href="#motherplate-a-scss-html5-css3-responsive-boilerplate"><span class="octicon octicon-link"></span></a>Motherplate: A SCSS, HTML5, CSS3, Responsive Boilerplate</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This is the boilerplate HTML/CSS I'll start off most projects with.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p><a href="http://www.leemunroe.com/motherplate/example.html">See example of bare bones elements here.</a></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Uses SASS partials to help structure the CSS</li>
+<li>Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.)</li>
+<li>Responsive ready 12-column grid system to work across many devices</li>
+<li>Uses Font-Awesome icon fonts for icons</li>
+<li>Uses Normalize to reset browser styles</li>
+<li>Only enough CSS to get you started; no visual styling with this boilerplate</li>
+<li>Only the HTML/JS you need to get started; very little components with this boilerplate</li>
+</ul><h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to Use</h2>
+
+<p>This will vary depending on the framework you are using. The following is how to for a basic static website.</p>
+
+<h3>
+<a name="install-ruby" class="anchor" href="#install-ruby"><span class="octicon octicon-link"></span></a>Install Ruby</h3>
+
+<p>Motherplate uses SASS and Compass, which rely on Ruby
+Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a></p>
+
+<h3>
+<a name="install-the-compass-gem" class="anchor" href="#install-the-compass-gem"><span class="octicon octicon-link"></span></a>Install the compass gem</h3>
+
+<p>Open up terminal (or command line) and install compass </p>
+
+<pre><code>$ gem update --system 
+$ gem install compass
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h3>
+<a name="download-motherplate" class="anchor" href="#download-motherplate"><span class="octicon octicon-link"></span></a>Download Motherplate</h3>
+
+<p>Download and copy the motherplate files into your new project folder.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="run-compass-watch" class="anchor" href="#run-compass-watch"><span class="octicon octicon-link"></span></a>Run compass watch</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>In terminal go to your project folder and run compass.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>$ cd sites/mynewproject/
+$ compass watch
+</code></pre>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="sit-back-and-watch-your-css-automatically-compile" class="anchor" href="#sit-back-and-watch-your-css-automatically-compile"><span class="octicon octicon-link"></span></a>Sit back and watch your CSS automatically compile</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>When you make changes to any of the scss files, your main.css file will be automatically updated.
+You don't edit main.css directly, compass takes care of that for you. You just edit the .scss files.</p>
+
+<h2>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h2>
+
+<p>A bare bones index.html template.</p>
+
+<h2>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h2>
+
+<ul>
+<li>
+<strong>_config.scss</strong> Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.</li>
+<li>
+<strong>_forms.scss</strong> Some basic form styles.</li>
+<li>
+<strong>_grid.scss</strong> A basic responsive grid system with 12 columns.</li>
+<li>
+<strong>_icons.scss</strong> This is Font Awesome's CSS stylesheet.</li>
+<li>
+<strong>_ie.scss</strong> Any styles that you need to add in order for Internet Explorer to work.</li>
+<li>
+<strong>_layout.scss</strong> This is where your main styles go. I typically have header, footer, logo classes here.</li>
+<li>
+<strong>_links.scss</strong> Styles for any text links and/or buttons.</li>
+<li>
+<strong>_media.scss</strong> Styles for images, video etc.</li>
+<li>
+<strong>_mixins.scss</strong> Reusabled SASS mixins e.g. clearfix.</li>
+<li>
+<strong>_other.scss</strong> Small reusable other styles that don't fit the rest of the framework.</li>
+<li>
+<strong>_print.scss</strong> Basic print stylesheets to make your pages look better when printed.</li>
+<li>
+<strong>_reset.scss</strong> This is normalize.</li>
+<li>
+<strong>_responsive.scss</strong> Add any responsive styles here e.g. hide elements, show elements, resize elements.</li>
+<li>
+<strong>_retina.scss</strong> Style for retina/high-def displays e.g. large images.</li>
+<li>
+<strong>_shame.scss</strong> Keep this to hand for any quick and dirty CSS you need to add but plan to tidy later.</li>
+<li>
+<strong>_tables.scss</strong> Styles for tables.</li>
+<li>
+<strong>_type.scss</strong> Basic styling for your typography.</li>
+<li>
+<strong>main.scss</strong> This brings all the partials together. Compass only compiles files that don't have an underscore</li>
+<li>
+<strong>/assets</strong> Any images that the CSS references e.g. a sprite, goes in here.</li>
+<li>
+<strong>/assets/fonts</strong> For any fonts you reference in CSS including icon fonts or @font-face.</li>
+</ul><h2>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h2>
+
+<ul>
+<li>I've included some basic Javascript including the latest jQuery and the document ready function.</li>
+</ul><h2>
+<a name="images" class="anchor" href="#images"><span class="octicon octicon-link"></span></a>Images</h2>
+
+<ul>
+<li>There is a /img folder for images.</li>
+<li>For images referenced in the CSS I tend to keep them in the css/assets/ folder e.g. sp.png is a sprite I can reference.</li>
+<li>Images referenced in the HTML are storted in the /img folder.</li>
+</ul><h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<ul>
+<li><a href="http://compass-style.org/">Compass Framework</a></li>
+<li><a href="http://sass-lang.com/">SASS</a></li>
+<li><a href="http://necolas.github.com/normalize.css/">normalize.css</a></li>
+<li><a href="http://fontawesome.io/">Font Awesome</a></li>
+</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/leemunroe">leemunroe</a></p>
