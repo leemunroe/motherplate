@@ -2,23 +2,24 @@
 This is the boilerplate HTML/CSS I'll start off most projects with.
 
 ## Features
-* Uses SASS partials to help structure the CSS
-* Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.)
-* Responsive ready 12-column grid system to work across many devices
-* Uses Font-Awesome icon fonts for icons
-* Uses Normalize to reset browser styles
-* Only enough CSS to get you started; no visual styling with this boilerplate
-* Only the HTML/JS you need to get started; very little components with this boilerplate
+* Uses SASS partials to help structure the CSS.
+* Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.).
+* Responsive-ready 12-column grid system to work across all devices.
+* Uses Font-Awesome icon fonts for icons.
+* Uses Normalize to reset browser styles.
+* Only enough CSS to get you started; no visual styling with this boilerplate.
+* Only the HTML/JS you need to get started; very little components with this boilerplate.
 
 ## How to Use
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Ruby
-Motherplate uses SASS and Compass, which rely on Ruby
-Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>
+Motherplate uses SASS and Compass, which rely on Ruby.
+
+Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>.
 
 ### Install the compass gem
-Open up terminal (or command line) and install compass 
+Open up terminal (or command line) and install compass .
 ```
 $ gem update --system 
 $ gem install compass
@@ -34,9 +35,11 @@ $ cd sites/mynewproject/
 $ compass watch
 ```
 
-### Sit back and watch your CSS automatically compile
+### Only edit the SCSS files
 When you make changes to any of the scss files, your main.css file will be automatically updated.
-You don't edit main.css directly, compass takes care of that for you. You just edit the .scss files.
+You don't edit main.css directly, compass takes care of that for you.
+
+If you were working on a Rails project for example, you could just copy the files in the css folder to app/assets/stylesheets (and use the compass-rails gem).
 
 ## HTML
 A bare bones index.html template.
@@ -60,9 +63,12 @@ A bare bones index.html template.
 * **_tables.scss** Styles for tables.
 * **_type.scss** Basic styling for your typography.
 * **main.scss** This brings all the partials together. Compass only compiles files that don't have an underscore
-* **/assets** Any images that the CSS references e.g. a sprite, goes in here.
+* **/assets** Any images that the CSS references e.g. an image sprite, goes in here.
 * **/assets/fonts** For any fonts you reference in CSS including icon fonts or @font-face.
 
+As your project grows and you need to add more styles just create new .scss files and reference them anywhere in your main.scss file.
+
+Typical files I'll end up adding include _nav.scss, _notifications.scss, _home.scss.
 
 ## JavaScript ##
 * I've included some basic Javascript including the latest jQuery and the document ready function.
@@ -70,7 +76,7 @@ A bare bones index.html template.
 ## Images ##
 * There is a /img folder for images.
 * For images referenced in the CSS I tend to keep them in the css/assets/ folder e.g. sp.png is a sprite I can reference.
-* Images referenced in the HTML are storted in the /img folder.
+* Images referenced in the HTML are stored in the /img folder.
 
 ## Documentation ##
 * <a href="http://compass-style.org/">Compass Framework</a>
