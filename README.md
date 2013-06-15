@@ -34,9 +34,11 @@ $ cd sites/mynewproject/
 $ compass watch
 ```
 
-### Sit back and watch your CSS automatically compile
+### Only edit the SCSS files
 When you make changes to any of the scss files, your main.css file will be automatically updated.
-You don't edit main.css directly, compass takes care of that for you. You just edit the .scss files.
+You don't edit main.css directly, compass takes care of that for you.
+
+If you were working on a Rails project for example, you could just copy the files in the css folder to app/assets/stylesheets (and use the compass-rails gem).
 
 ## HTML
 A bare bones index.html template.
@@ -63,6 +65,9 @@ A bare bones index.html template.
 * **/assets** Any images that the CSS references e.g. a sprite, goes in here.
 * **/assets/fonts** For any fonts you reference in CSS including icon fonts or @font-face.
 
+As your project grows and you need to add more styles just create new .scss files and reference them anywhere in your main.scss file.
+
+Typical files I'll end up adding include _nav.scss, _notifications.scss, _home.scss.
 
 ## JavaScript ##
 * I've included some basic Javascript including the latest jQuery and the document ready function.
