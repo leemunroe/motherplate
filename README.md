@@ -76,7 +76,7 @@ Typical files I'll end up adding include _nav.scss, _notifications.scss, _home.s
 ## Images ##
 * There is a /img folder for images.
 * For images referenced in the CSS I tend to keep them in the css/assets/ folder e.g. sp.png is a sprite I can reference.
-* Images referenced in the HTML are storted in the /img folder.
+* Images referenced in the HTML are stored in the /img folder.
 
 ## Documentation ##
 * <a href="http://compass-style.org/">Compass Framework</a>
