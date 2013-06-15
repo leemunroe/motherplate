@@ -2,23 +2,24 @@
 This is the boilerplate HTML/CSS I'll start off most projects with.
 
 ## Features
-* Uses SASS partials to help structure the CSS
-* Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.)
-* Responsive ready 12-column grid system to work across many devices
-* Uses Font-Awesome icon fonts for icons
-* Uses Normalize to reset browser styles
-* Only enough CSS to get you started; no visual styling with this boilerplate
-* Only the HTML/JS you need to get started; very little components with this boilerplate
+* Uses SASS partials to help structure the CSS.
+* Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.).
+* Responsive-ready 12-column grid system to work across all devices.
+* Uses Font-Awesome icon fonts for icons.
+* Uses Normalize to reset browser styles.
+* Only enough CSS to get you started; no visual styling with this boilerplate.
+* Only the HTML/JS you need to get started; very little components with this boilerplate.
 
 ## How to Use
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Ruby
-Motherplate uses SASS and Compass, which rely on Ruby
-Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>
+Motherplate uses SASS and Compass, which rely on Ruby.
+
+Macs come pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>.
 
 ### Install the compass gem
-Open up terminal (or command line) and install compass 
+Open up terminal (or command line) and install compass .
 ```
 $ gem update --system 
 $ gem install compass
