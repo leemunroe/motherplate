@@ -63,7 +63,7 @@ A bare bones index.html template.
 * **_tables.scss** Styles for tables.
 * **_type.scss** Basic styling for your typography.
 * **main.scss** This brings all the partials together. Compass only compiles files that don't have an underscore
-* **/assets** Any images that the CSS references e.g. a sprite, goes in here.
+* **/assets** Any images that the CSS references e.g. an image sprite, goes in here.
 * **/assets/fonts** For any fonts you reference in CSS including icon fonts or @font-face.
 
 As your project grows and you need to add more styles just create new .scss files and reference them anywhere in your main.scss file.
