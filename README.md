@@ -1,5 +1,5 @@
 # Motherplate: A SCSS, HTML5, CSS3, Responsive Boilerplate
-This is the boilerplate HTML/CSS I'll start off most projects with.
+The boilerplate I'll start off most projects with.
 
 ## Features
 * Uses SASS partials to help structure the CSS.
