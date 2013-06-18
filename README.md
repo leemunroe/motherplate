@@ -1,5 +1,13 @@
 # Motherplate: A SCSS, HTML5, CSS3, Responsive Boilerplate
-The boilerplate I'll start off most projects with.
+
+## What is this?
+This is a bare bones boilerplate/SCSS framework I'll start off most web projects with.
+
+It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project, including a responsive grid, typography, icons and forms.
+
+It is not as in depth as something like <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and doesn't include styled components like <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
+
+It can be used for a static web project as is, or you can copy the CSS folder into an existing framework.
 
 ## Features
 * Uses SASS partials to help structure the CSS.
