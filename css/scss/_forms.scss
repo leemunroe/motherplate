@@ -39,6 +39,7 @@ form{
 
 		// Validation reason
 		.reason{
+			margin-top:5px;
 			color:$bad-color;
 		}
 		input[type=text],input[type=email],input[type=phone],input[type=password],input[type=number],input[type=search], textarea{
