@@ -15,25 +15,23 @@
 
 @media (min-width: 480px) {
 
-	.group {
-		margin-left: -2.1277%;
-	}
+    $unit: 6.2056333%;
 
-	.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
-		float: left;
-		padding-left: 2.1277%;
-		margin-bottom: 0;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
+    .group {
+        margin-left: -$margin;
+    }
 
-	$unit: 8.333333333%;
+    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
+        float: left;
+        margin-left: $margin;
+        margin-bottom: 0;
+        @include box-sizing(border-box);
+    }
 
-	@for $i from 1 through 12 {
-		.span#{$i} {
-			width: $unit * $i;
-		}
-	}
+    @for $i from 1 through 12 {
+        .span#{$i} {
+            width: ($unit * $i) + ($margin * ($i - 1));
+        }
+    }
 
 }
