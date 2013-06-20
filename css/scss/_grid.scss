@@ -15,7 +15,8 @@
 
 @media (min-width: 480px) {
 
-    $unit: 6.2056333%;
+    $unit: 6.2056333%; // Width of each grid column unit
+    $margin: 2.1277%; // Margin between the grid columns
 
     .group {
         margin-left: -$margin;
