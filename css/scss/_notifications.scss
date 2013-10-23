@@ -7,22 +7,22 @@
   @include clearfix;
   &.error{
     border-color:$bad-color;
-    color:darken($bad-color,5);
+    color:darken($bad-color,10);
     background:rgba($bad-color,.2);
   }
   &.success{
   	border-color:$good-color;
-  	color:darken($good-color,5);
+  	color:darken($good-color,10);
   	background:rgba($good-color,.2);
   }
   &.warning{
     border-color:$warning-color;
-    color:darken($warning-color,5);
+    color:darken($warning-color,10);
     background:rgba($warning-color,.2);
   }
   &.info{
     border-color:$info-color;
-    color:darken($info-color,5);
+    color:darken($info-color,10);
     background:rgba($info-color,.2);
   }
   &.empty{
