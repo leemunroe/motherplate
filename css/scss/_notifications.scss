@@ -1,0 +1,36 @@
+// Notifications (alerts)
+.notification{
+  border:1px solid;
+  padding:10px;
+  margin-bottom:$padding;
+  @include border-radius($br);
+  @include clearfix;
+  &.error{
+    border-color:$bad-color;
+    color:darken($bad-color,5);
+    background:rgba($bad-color,.2);
+  }
+  &.success{
+  	border-color:$good-color;
+  	color:darken($good-color,5);
+  	background:rgba($good-color,.2);
+  }
+  &.warning{
+    border-color:$warning-color;
+    color:darken($warning-color,5);
+    background:rgba($warning-color,.2);
+  }
+  &.info{
+    border-color:$info-color;
+    color:darken($info-color,5);
+    background:rgba($info-color,.2);
+  }
+  &.empty{
+    text-align:center;
+    background:#f4f4f4;
+    border:1px dashed #ddd;
+  }
+  p:last-child{
+    margin-bottom:0;
+  }
+}
