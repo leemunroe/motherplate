@@ -1,5 +1,7 @@
 # Motherplate: A Responsive SCSS Boilerplate for Web Designers
 
+Preview: http://leemunroe.github.io/motherplate/example.html
+
 ## What is this?
 This is a bare bones HTML/CSS framework I'll start off most web projects with.
 
@@ -83,7 +85,7 @@ Typical files I'll end up adding include _nav.scss, _home.scss.
 * There is a /img folder for images.
 * For images referenced in the CSS I tend to keep them in the css/assets/ folder e.g. sp.png is a sprite I can reference.
 * Images referenced in the HTML are stored in the /img folder.
-* 
+
 ## Fonts ##
 * Included font awesome for icons
 
