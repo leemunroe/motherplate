@@ -1,8 +1,9 @@
-@media screen and (max-width: 780px) {
-	// 780px and below styles here
+@include max-screen($big-break) {
+	// e.g. iPad, tablets, small browsers
 }
 
-@media screen and (max-width: 480px) {
+@include max-screen($small-break) {
+  // e.g. iPhone, mobile
 	body{
 		overflow-x:hidden;
 	}
