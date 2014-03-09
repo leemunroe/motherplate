@@ -1,6 +1,6 @@
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size:100%;
   line-height:1.6;
@@ -11,36 +11,40 @@ blockquote {
   font-weight: 400;
   font-family: Georgia, Times, "Times New Roman", serif;
   padding-left: 25px;
-  font-size: 26px;
-  margin: 0 0 25px;
+  font-size: 1.4em;
+  margin: 0 0 $padding/2;
   border-left:2px solid $primary-color;
+}
+
+h1,h2,h3,h4{
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h1 {
   font-size: 68px;
   margin: 0 0 25px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 h2 {
   font-size: 42px;
   margin: 0 0 25px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 h3 {
   font-size: 26px;
   margin: 0 0 25px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 h4 {
   font-size: 18px;
   margin: 0 0 25px;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 

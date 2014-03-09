@@ -25,10 +25,12 @@
 //  */
 // /* FONT PATH
 //  * -------------------------- */
+
+$fonts-dir: "../fonts/";
 @font-face {
   font-family: 'FontAwesome';
-  src: url('assets/fonts/fontawesome-webfont.eot?v=3.2.0');
-  src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('assets/fonts/fontawesome-webfont.woff?v=3.2.0') format('woff'), url('assets/fonts/fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url('assets/fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
+  src: url($fonts_dir+'fontawesome-webfont.eot?v=3.2.0');
+  src: url($fonts_dir+'fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url($fonts_dir+'fontawesome-webfont.woff?v=3.2.0') format('woff'), url($fonts_dir+'fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url($fonts_dir+'fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
   font-weight: normal;
   font-style: normal;
 }

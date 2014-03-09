@@ -3,12 +3,12 @@
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 40px;
 }
 
 .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
 	display: block;
-	margin-bottom: $padding;
+	margin-bottom: 20px;
 }
 
 // Grid columns are stacked until the display size is greater than min-width

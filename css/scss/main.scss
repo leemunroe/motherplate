@@ -6,6 +6,7 @@
 
 // Import Open Sans font from Google
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 // Set variables and reusable mixins
 @import "config";
@@ -29,7 +30,6 @@
 
 // Additional styles to think about
 @import "responsive";
-@import "retina";
 @import "print";
 
 // If IE support is needed

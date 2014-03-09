@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Motherplate - A bare bones responsive HTML5 CSS3 SCSS boilerplate for web designers</title>
+	<title>Motherplate - A bare bones responsive SCSS boilerplate for web designers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 
@@ -21,7 +21,7 @@
 	<div class="container">
 		
 	<h1>Motherplate</h1>
-	<h2>A bare bones responsive HTML5 CSS3 SCSS boilerplate for web designers</h2>
+	<h2>A bare bones responsive SCSS boilerplate for web designers</h2>
 	<iframe src="http://ghbtns.com/github-btn.html?user=leemunroe&repo=motherplate&type=watch&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
   <iframe src="http://ghbtns.com/github-btn.html?user=leemunroe&repo=motherplate&type=fork&count=true&size=large"
@@ -43,7 +43,9 @@
 
 	<h2>Buttons</h2>
 
-	<p><button class="btn btn-primary">Primary button</button> <button class="btn">Default button</button> <button class="btn btn-link">Link button</button></p>
+	<p><button class="btn-primary">Primary button</button> <button class="btn-secondary">Secondary button</button> <button class="btn">Default button</button> <button class="btn btn-link">Link button</button> </p>
+
+	<p><button class="btn-primary btn-cta">Primary call to action button</button> <button class="btn-secondary btn-cta">Secondary call to action button</button></p>
 
 	<hr>
 
@@ -111,38 +113,38 @@
 	
 	<h2>Forms</h2>
 	<form>
-		<div class="item">
+		<div class="field">
 			<label for="">Text label</label>
 			<input type="text">
 			<p class="note">Note</p>
 		</div>
-		<div class="item">
+		<div class="field">
 			<label for="">Email</label>
 			<input type="email">
 		</div>
-		<div class="item">
+		<div class="field">
 			<label for="">Search</label>
 			<input type="search">
 		</div>
-		<div class="item">
+		<div class="field">
 			<label for="">Password <span class="req">(required)</span></label>
 			<input type="password">
 		</div>
-		<div class="item error">
+		<div class="field error">
 			<label for="">Text label <span class="req">(required)</span></label>
 			<input type="text">
 			<p class="reason">This field is required</p>
 		</div>
-		<div class="item">
+		<div class="field">
 			<label for="">Textarea</label>
 			<textarea></textarea>
 		</div>
-		<div class="item">
+		<div class="field">
 			<label><input type="checkbox"> Option 1</label>
 			<label><input type="checkbox"> Option 2</label>
 			<label><input type="checkbox"> Option 3</label>
 		</div>
-		<div class="item">
+		<div class="field">
 			<label><input type="radio" name="radio"> Option 1</label>
 			<label><input type="radio" name="radio"> Option 2</label>
 			<label><input type="radio" name="radio"> Option 3</label>
