@@ -1,19 +1,41 @@
-// Set your project variables here
-
-$primary-color: #1271db;
-$secondary-color: #233E5B;
-$tertiary-color: #aaa;
-
-$bad-color: #ce0832; // Bad color for errors, validation etc.
-$good-color: #5dae1b; // Good color for success etc.
-$info-color: #10bade; // Good color for success etc.
-$warning-color: #dea110; // Good color for success etc.
-$subtle-color: #999; // Subtle color for subtle text
-
+// Consistent settings
 $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
-$padding: 40px; // Consistent padding and margins
+$padding: 40px; // Padding and margins
 
 // Responsive breakpoints
 $small-break: 480px;
 $big-break: 780px;
+
+// Better default colors
+// Cool
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+// Warm
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+// Gray Scale
+$white:  #fff;
+$silver: #ddd;
+$grey:   #aaa;
+$black:  #111;
+
+// Color variables
+$primary-color: #1271db;
+$secondary-color: #233E5B;
+$tertiary-color: #aaa;
+
+$bad-color: $red; // Bad color for errors, validation etc.
+$good-color: $green; // Good color for success etc.
+$info-color: $blue; // Good color for success etc.
+$warning-color: $orange; // Good color for success etc.
+$subtle-color: $grey; // Subtle color for subtle text

@@ -7,28 +7,28 @@
   @include clearfix;
   &.error{
     border-color:$bad-color;
-    color:darken($bad-color,10);
-    background:rgba($bad-color,.2);
+    color:darken($bad-color,15);
+    background:lighten($bad-color,35);
   }
   &.success{
   	border-color:$good-color;
   	color:darken($good-color,10);
-  	background:rgba($good-color,.2);
+  	background:lighten($good-color,45);
   }
   &.warning{
     border-color:$warning-color;
     color:darken($warning-color,10);
-    background:rgba($warning-color,.2);
+    background:lighten($warning-color,40);
   }
   &.info{
     border-color:$info-color;
     color:darken($info-color,10);
-    background:rgba($info-color,.2);
+    background:lighten($info-color,48);
   }
   &.empty{
     text-align:center;
     background:#f4f4f4;
-    border:1px dashed #ddd;
+    border:1px dashed $silver;
   }
   p:last-child{
     margin-bottom:0;

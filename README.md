@@ -66,7 +66,6 @@ A bare bones index.html template.
 * **_print.scss** Basic print stylesheets to make your pages look better when printed.
 * **_reset.scss** This is normalize.
 * **_responsive.scss** Add any responsive styles here e.g. hide elements, show elements, resize elements.
-* **_retina.scss** Style for retina/high-def displays e.g. large images.
 * **_shame.scss** Keep this to hand for any quick and dirty CSS you need to add but plan to tidy later.
 * **_tables.scss** Styles for tables.
 * **_type.scss** Basic styling for your typography.
