@@ -1,3 +1,4 @@
+// Clear after floats
 @mixin clearfix {
   zoom:1;
   &:before, &:after {
@@ -11,12 +12,13 @@
   }
 }
 
+// Apply clearfix to this classes by default
 .clearfix, .group{
   @include clearfix;
 }
 
 // Responsive mixins
-@mixin max-screen($res)
+@mixin responsive($res)
 {
   @media screen and (max-width: $res)
   {
@@ -24,7 +26,7 @@
   }
 }
 
-@mixin min-screen($res)
+@mixin mobilefirst($res)
 {
   @media screen and (min-width: $res)
   {

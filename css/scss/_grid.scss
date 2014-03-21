@@ -6,14 +6,14 @@
 	padding: 0 10px;
 }
 
-.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
 	display: block;
 	margin-bottom: 20px;
 }
 
 // Grid columns are stacked until the display size is greater than min-width
 
-@include min-screen($small-break) {
+@include mobilefirst($small-break) {
 
     $unit: 6.2056333%; // Width of each grid column unit
     $margin: 2.1277%; // Margin between the grid columns
@@ -26,7 +26,7 @@
         margin-left: -$margin;
     }
 
-    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11{
+    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
         float: left;
         margin-left: $margin;
         margin-bottom: 0;
