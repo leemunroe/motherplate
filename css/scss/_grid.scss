@@ -36,6 +36,13 @@
     @for $i from 1 through 12 {
         .span#{$i} {
             width: ($unit * $i) + ($margin * ($i - 1));
+            // remove float so span#'s don't stack inline.
+            &.break {
+                float:none;
+            }
+        }
+        .offset#{$i} {
+            margin-left: ($unit * $i) + ($margin * ($i +1));
         }
     }
 
