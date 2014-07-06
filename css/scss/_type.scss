@@ -72,3 +72,34 @@ pre{
   word-break: break-all;
   word-wrap: break-word;
 }
+
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+@include responsive($small-break) {
+  body{
+    font-size:14px;
+  }
+  h1,h2,h3,h4,h5{
+    margin-bottom:10px;
+  }
+  h1{
+    font-size:26px;
+  }
+  h2{
+    font-size:18px;
+  }
+  h3{
+    font-size:16px;
+  }
+  h4,h5,p,ul,ol{
+    font-size:14px;
+  }
+}
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
+// @include mobilefirst($small-break) {
+// }
