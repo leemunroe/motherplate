@@ -1,9 +1,8 @@
 // Notifications (alerts)
 .notification{
-  border:1px solid;
+  border-left:3px solid;
   padding:10px;
   margin-bottom:$padding;
-  @include border-radius($br);
   @include clearfix;
   &.error{
     border-color:$bad-color;
