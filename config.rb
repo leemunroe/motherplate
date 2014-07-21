@@ -1,3 +1,9 @@
+# In project directory:
+# compass init -c ./config.rb
+# delete the compass created css/ie.css, css/print.css, css/screen.css
+# delete css/scss/ie.css, css/scss/print.css, css/scss/screen.css
+# compass watch
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
