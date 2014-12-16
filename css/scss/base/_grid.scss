@@ -1,4 +1,6 @@
-// 12 Column fluid and responsive grid
+/**
+ 12 Column Responsive Grid
+ */
 
 .container{
 	max-width: 1200px;
@@ -11,8 +13,10 @@
 	margin-bottom: 20px;
 }
 
-// Grid columns are stacked until the display size is greater than min-width
 
+
+
+// Grid columns are stacked until the display size is greater than min-width
 @include mobilefirst($small-break) {
 
     $unit: 6.2056333%; // Width of each grid column unit

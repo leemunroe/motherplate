@@ -1,9 +1,13 @@
-body {
+/**
+ Typography
+ */
+
+ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size:100%;
-  line-height:1.6;
+  font-size: 100%;
+  line-height: 1.6;
 }
 
 blockquote {
@@ -13,7 +17,7 @@ blockquote {
   padding-left: 25px;
   font-size: 1.4em;
   margin: 0 0 $padding/2;
-  border-left:2px solid $primary-color;
+  border-left: 2px solid $primary-color;
 }
 
 h1,h2,h3,h4,h5{
@@ -60,18 +64,39 @@ p {
 }
 
 pre{
-  font-family:Monaco, Menlo, Consolas, "Courier New", monospace;
-  margin:0 0 $padding/2;
-  padding:10px;
-  background:#f5f5f5;
-  border:1px solid rgba(0,0,0,.1);
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  margin: 0 0 $padding/2;
+  padding: 10px;
+  background: #222;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+code{
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  padding: 2px 10px;
+  background: #f5f5f5;
+  border: 1px solid rgba(0,0,0,.1);
   @include border-radius(5px);
-  display:block;
   font-size: 13px;
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
 }
+
+a{
+  color:$primary-color;
+  &:hover,&:focus{
+    text-decoration: none;
+  }
+}
+
+
+
 
 
 // Responsive styles if needed
