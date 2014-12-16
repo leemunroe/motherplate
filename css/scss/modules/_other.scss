@@ -1,13 +1,21 @@
+/**
+ Other Useful Reusable Styles
+ */
+
 *{
 	@include box-sizing(border-box !important);
 }
 
-.aligncenter{
+.text-center{
   text-align:center;
 }
 
-.alignright{
+.text-right{
 	text-align:right;
+}
+
+.text-left{
+	text-align:left;
 }
 
 .clear{
@@ -22,7 +30,7 @@
 	float:left;
 }
 
-.nolist{
+.list-unstyled{
 	list-style:none;
 	padding-left:0;
 	margin-left:0;

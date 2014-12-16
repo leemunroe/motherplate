@@ -1,0 +1,16 @@
+/**
+ Print Stylesheet
+ */
+
+@media print{
+	header,nav,footer{
+		display: none;
+	}
+	img{
+		max-width: 500px;
+	}
+	body{
+		font: 14pt Georgia, "Times New Roman", Times, serif;
+		line-height: 1.3;
+	}
+}

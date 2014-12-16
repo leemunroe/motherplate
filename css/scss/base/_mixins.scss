@@ -1,3 +1,7 @@
+/**
+ Project Mixins
+ */
+
 // Clear after floats
 @mixin clearfix {
   zoom:1;
@@ -16,6 +20,9 @@
 .clearfix, .group{
   @include clearfix;
 }
+
+
+
 
 // Responsive mixins
 @mixin responsive($res)
