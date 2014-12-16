@@ -3,13 +3,13 @@
 Preview: http://leemunroe.github.io/motherplate/example.html
 
 ## What is this?
-This is a bare bones HTML/CSS framework I'll start off most web projects with.
+This is a bare bones HTML/CSS framework. This is what I'll typically start off most web projects with.
 
-It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project, including a responsive grid, typography, icons and forms.
+It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project, including a responsive grid, typography, buttons, icons and forms.
 
 It is not as in depth as something like <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and doesn't include styled components like <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
 
-It can be used for a static web project as is, or you can copy the CSS folder into an existing framework.
+It can be used for a static web project as is, or you can copy the CSS folder into an existing framework (e.g. Rails).
 
 Using Motherplate for your project? [Let me know](http://www.leemunroe.com/contact) so I can check it out.
 
@@ -26,7 +26,7 @@ Using Motherplate for your project? [Let me know](http://www.leemunroe.com/conta
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Ruby
-Motherplate uses SASS and Compass, which rely on Ruby.
+Motherplate uses SCSS and Compass, which rely on Ruby.
 
 OSX comes pre-installed with Ruby but if you need to you can <a href="http://www.ruby-lang.org/en/downloads/">download ruby here</a>.
 
@@ -48,37 +48,37 @@ $ compass watch
 ```
 
 ### Only edit the SCSS files
-When you make changes to any of the scss files, your main.css file will be automatically updated.
+When you make changes to any of the SCSS files, your main.css file will be automatically updated.
 You don't edit main.css directly, compass takes care of that for you.
 
-If you were working on a Rails project for example, you could just copy the files in the css folder to app/assets/stylesheets. The asset pipeline (and compass-rails gem) would take care of the rest.
+If you were working on a Rails project for example, you could copy the files in the css folder to app/assets/stylesheets. The asset pipeline (and compass-rails gem) would take care of the rest.
 
 ## HTML
 A bare bones index.html template.
 
 ## CSS
-* `_config.scss` Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.
-* `_forms.scss` Some basic form styles.
-* `_grid.scss` A basic responsive grid system with 12 columns.
-* `_icons.scss` This is Font Awesome's CSS stylesheet.
-* `_ie.scss` Any styles that you need to add in order for Internet Explorer to work.
-* `_layout.scss` This is where your main styles go. I typically have header, footer, logo classes here.
-* `_links.scss` Styles for any text links and/or buttons.
-* `_media.scss` Styles for images, video etc.
-* `_mixins.scss` Reusabled SASS mixins e.g. clearfix.
-* `_notifications.scss` Alerts to notify or give feedback to the user
-* `_other.scss` Small reusable other styles that don't fit the rest of the framework.
-* `_print.scss` Basic print stylesheets to make your pages look better when printed.
-* `_reset.scss` This is normalize.
-* `_responsive.scss` Add any responsive styles here e.g. hide elements, show elements, resize elements.
-* `_shame.scss` Keep this to hand for any quick and dirty CSS you need to add but plan to tidy later.
-* `_tables.scss` Styles for tables.
-* `_type.scss` Basic styling for your typography.
+* `base/config` Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.
+* `base/grid` A basic responsive grid system with 12 columns.
+* `base/icons` This is Font Awesome's CSS stylesheet. Plug and play icons.
+* `base/ie` Any styles that you need to add in order for Internet Explorer to work.
+* `base/mixins` Reusabled Sass mixins e.g. clearfix.
+* `base/normalize` This is Normalize, a CSS reset.
+* `base/print` Basic print stylesheets to make your pages look better when printed.
+* `base/responsive` Add any global responsive styles here e.g. hide elements, show elements, resize elements.
+* `base/shame` Keep this to hand for any quick and dirty CSS you need to add but plan to tidy later.
+* `base/type` Basic styling for your typography.
+* `modules/alerts` Alerts to notify or give feedback to the user
+* `modules/buttons` Styles for any text links and/or buttons.
+* `modules/forms` Some basic form styles.
+* `modules/media` Styles for images, video etc.
+* `modules/nav` Inline navigation.
+* `modules/other` Other reusable styles that come in handy.
+* `modules/tables` Styles for tables.
+* `pages/home` Styles that are specific to the homepage
+* `pages/layout` Global layout styles e.g. header, footer, logo etc.
 * `main.scss` This brings all the partials together. Compass only compiles files that don't have an underscore
 
 As your project grows and you need to add more styles just create new .scss files and reference them anywhere in your main.scss file.
-
-Typical files I'll end up adding include _nav.scss, _home.scss.
 
 ## JavaScript ##
 * I've included some basic Javascript including the latest jQuery and the document ready function.
