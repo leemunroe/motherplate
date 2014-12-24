@@ -1,9 +1,9 @@
-/**
- Responsive Styles
- */
+//**
+// Responsive Styles
+//**
 
 @include responsive($big-break) {
-	// e.g. iPad, tablets, small browsers
+  // e.g. iPad, tablets, small browsers
 }
 
 
@@ -12,7 +12,7 @@
 
 @include responsive($small-break) {
   // e.g. iPhone, mobile
-	body{
-		overflow-x: hidden;
-	}
+  body {
+    overflow-x: hidden;
+  }
 }

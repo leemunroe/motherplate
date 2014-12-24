@@ -1,38 +1,44 @@
-/**
- Alerts & Notifications
- */
+//**
+// Alerts & Notifications
+//**
 
-.alert{
-  border-left: 3px solid;
-  padding: 10px;
-  margin-bottom: $padding;
+.alert {
   @include clearfix;
-  &.alert-danger{
+  border-left: 3px solid;
+  margin-bottom: $padding;
+  padding: 10px;
+
+  &.alert-danger {
+    background: lighten($danger-color, 35);
     border-color: $danger-color;
-    color: darken($danger-color,15);
-    background: lighten($danger-color,35);
+    color: darken($danger-color, 15);
   }
-  &.alert-success{
-  	border-color: $success-color;
-  	color: darken($success-color,10);
-  	background: lighten($success-color,45);
+
+  &.alert-success {
+    background: lighten($success-color, 45);
+    border-color: $success-color;
+    color: darken($success-color, 10);
   }
-  &.alert-warning{
+
+  &.alert-warning {
+    background: lighten($warning-color, 40);
     border-color: $warning-color;
-    color: darken($warning-color,10);
-    background: lighten($warning-color,40);
+    color: darken($warning-color, 10);
   }
-  &.alert-info{
+
+  &.alert-info {
+    background: lighten($info-color, 48);
     border-color: $info-color;
-    color: darken($info-color,10);
-    background: lighten($info-color,48);
+    color: darken($info-color, 10);
   }
-  &.alert-empty{
-    text-align: center;
+
+  &.alert-empty {
     background: #f4f4f4;
     border: 1px dashed $silver;
+    text-align: center;
   }
-  p:last-child{
+
+  p:last-child {
     margin-bottom: 0;
   }
 }
