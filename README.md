@@ -11,8 +11,6 @@ It is not as in depth as something like <a href="http://html5boilerplate.com/">H
 
 It can be used for a static web project as is, or you can copy the CSS folder into an existing framework (e.g. Rails).
 
-Using Motherplate for your project? [Let me know](http://www.leemunroe.com/contact) so I can check it out.
-
 ## Features
 * Uses SCSS partials to help structure the CSS.
 * Uses Compass to take advantage of CSS3 mixins so you don't have to worry about browser prefixes (-webkit- etc.).
