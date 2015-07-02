@@ -4,7 +4,7 @@
 
 // Default button
 .btn {
-  @include border-radius($btn-br);
+  border-radius: $btn-br;
   background: transparent;
   border: 1px solid $primary-color;
   color: $primary-color;
@@ -66,7 +66,7 @@
 
 // Link button - a button that looks like a link
 .btn-link {
-  @include box-shadow(none);
+  box-shadow: none;
   background: transparent;
   border: 0;
   color: $primary-color;
