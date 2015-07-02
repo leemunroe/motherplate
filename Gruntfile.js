@@ -23,6 +23,25 @@ module.exports = function(grunt) {
         }
       }
     },
+
+
+
+
+
+    //Use PostCSS Autoprefixer to apply browser prefixes for certain styles
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('autoprefixer-core')({
+              browsers: ['last 2 versions']
+          })
+        ]
+      },
+      dist: {
+        src: 'css/*.css'
+      }
+    },
  
 
 
@@ -37,7 +56,8 @@ module.exports = function(grunt) {
         'img/**/*.{png,jpg,gif,svg}'
       ],
       tasks: [
-        'sass'
+        'sass',
+        'postcss'
       ]
     }
  
