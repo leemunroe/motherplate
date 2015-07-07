@@ -20,8 +20,11 @@
 .span10,
 .span11,
 .span12 {
-  display: block;
   margin-bottom: 20px;
+}
+
+.group {
+  flex-direction: column;
 }
 
 
@@ -38,6 +41,10 @@
   }
 
   .group {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-left: -$margin;
   }
 
@@ -54,23 +61,18 @@
   .span11,
   .span12 {
     @include box-sizing(border-box);
-    float: left;
-    margin-bottom: 0;
-    margin-left: $margin;
+    flex: 0 0 auto;
   }
 
   @for $i from 1 through 12 {
     .span#{$i} {
-      width: ($unit * $i) + ($margin * ($i - 1));
-
-      // remove float so span#'s don't stack inline.
-      &.break {
-        float: none;
-      }
+      flex-basis: ($unit * $i) + ($margin * ($i - 1));
+      margin-left: $margin;
+      max-width: ($unit * $i) + ($margin * ($i - 1));
     }
 
     .offset#{$i} {
-      margin-left: ($unit * $i) + ($margin * ($i +1));
+      margin-left: ($unit * $i) + ($margin * ($i + 1));
     }
   }
 }
