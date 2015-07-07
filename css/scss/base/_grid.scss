@@ -1,16 +1,30 @@
-/**
- 12 Column Responsive Grid
- */
+//**
+// 12 Column Responsive Grid
+//**
 
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 10px;
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
 }
 
-.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
-	display: block;
-	margin-bottom: 20px;
+.span1,
+.span2,
+.span3,
+.span4,
+.span5,
+.span6,
+.span7,
+.span8,
+.span9,
+.span10,
+.span11,
+.span12 {
+  margin-bottom: 20px;
+}
+
+.group {
+  flex-direction: column;
 }
 
 
@@ -19,35 +33,45 @@
 // Grid columns are stacked until the display size is greater than min-width
 @include mobilefirst($small-break) {
 
-    $unit: 6.2056333%; // Width of each grid column unit
-    $margin: 2.1277%; // Margin between the grid columns
+  $unit: 6.2056333%; // Width of each grid column unit
+  $margin: 2.1277%; // Margin between the grid columns
 
-    .container{
-        padding:0 40px;
+  .container {
+    padding: 0 40px;
+  }
+
+  .group {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -$margin;
+  }
+
+  .span1,
+  .span2,
+  .span3,
+  .span4,
+  .span5,
+  .span6,
+  .span7,
+  .span8,
+  .span9,
+  .span10,
+  .span11,
+  .span12 {
+    flex: 0 0 auto;
+  }
+
+  @for $i from 1 through 12 {
+    .span#{$i} {
+      flex-basis: ($unit * $i) + ($margin * ($i - 1));
+      margin-left: $margin;
+      max-width: ($unit * $i) + ($margin * ($i - 1));
     }
 
-    .group {
-        margin-left: -$margin;
+    .offset#{$i} {
+      margin-left: ($unit * $i) + ($margin * ($i + 1));
     }
-
-    .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
-        float: left;
-        margin-left: $margin;
-        margin-bottom: 0;
-        @include box-sizing(border-box);
-    }
-
-    @for $i from 1 through 12 {
-        .span#{$i} {
-            width: ($unit * $i) + ($margin * ($i - 1));
-            // remove float so span#'s don't stack inline.
-            &.break {
-                float:none;
-            }
-        }
-        .offset#{$i} {
-            margin-left: ($unit * $i) + ($margin * ($i +1));
-        }
-    }
-
+  }
 }

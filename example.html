@@ -94,6 +94,15 @@
 
 		<hr>
 
+		<h2>Navigation</h2>
+		<nav>
+			<a href="">Nav Item 1</a>
+			<a href="">Nav Item 2</a>
+			<a href="">Nav Item 3</a>
+		</nav>
+
+		<hr>
+
 		<h2>Tables</h2>
 		<table>
 			<thead>
@@ -181,21 +190,30 @@
 
 		<style>
 		/*Style to help visualize grid for demo purposes*/
-		.grid-style-helper{background:pink;height:50px;margin-bottom:10px;}
+		.grid-style-helper {
+			background: pink;
+			border: 1px solid purple;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			min-height: 50px;
+		}
 		</style>
 
 		<div class="group">
 			<div class="span6 grid-style-helper">.span6</div>
 			<div class="span6 grid-style-helper">.span6</div>
-
+		</div>
+		<div class="group">
 			<div class="span8 grid-style-helper">.span8</div>
-			<div class="span4 grid-style-helper">.span4</div>
-
+			<div class="span4 grid-style-helper">.span4 <br> Extra long piece of text to see what happens when one column is longer than the other...</div>
+		</div>
+		<div class="group">
 			<div class="span3 grid-style-helper">.span3</div>
 			<div class="span3 grid-style-helper">.span3</div>
 			<div class="span3 grid-style-helper">.span3</div>
 			<div class="span3 grid-style-helper">.span3</div>
-
+		</div>
+		<div class="group">
 			<div class="span12 grid-style-helper">.span12</div>
 		</div>
 
@@ -217,32 +235,26 @@
 		</div>
 
 		<div class="group">
-			<div class="span1 break grid-style-helper">.span1.break</div>
-			<div class="span2 break grid-style-helper">.span2.break</div>
+			<div class="span3 grid-style-helper">.span3</div>
+		</div>
 
-			<div class="span3 break grid-style-helper">.span3.break</div>
-			<div class="span4 break grid-style-helper">.span4.break</div>
-
-			<div class="span5 break grid-style-helper">.span5.break</div>
-			<div class="span6 break grid-style-helper">.span6.break</div>
-			<div class="span7 break grid-style-helper">.span7.break</div>
-			<div class="span8 break grid-style-helper">.span8.break</div>
-
-			<div class="span9 break grid-style-helper">.span9.break</div>
-			<div class="span10 break grid-style-helper">.span10.break</div>
-			<div class="span11 break grid-style-helper">.span11.break</div>
-			<div class="span12 break grid-style-helper">.span12.break</div>
+		<div class="group">
+			<div class="span7 grid-style-helper">.span7</div>
 		</div>
 
 		<hr>
 
 		<h2>Images</h2>
 		<!-- Example using picture element -->
-		<picture>
-			<source media="(min-width: 1000px)" srcset="img/cat@2x.jpg">
-			<source media="(min-width: 640px)" srcset="img/cat.jpg">
-			<img src="img/cat@2x.jpg" alt="Cat">
-		</picture>
+		<div class="group">
+			<div class="span12">
+				<picture>
+					<source media="(min-width: 1000px)" srcset="img/cat@2x.jpg">
+					<source media="(min-width: 640px)" srcset="img/cat.jpg">
+					<img src="img/cat@2x.jpg" alt="Cat">
+				</picture>
+			</div>
+		</div>
 
 		<!-- Examples using srcset -->
 		<div class="group">

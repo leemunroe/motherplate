@@ -1,0 +1,55 @@
+//**
+// Other Useful Reusable Styles
+//**
+
+* {
+  box-sizing: border-box !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.valign {
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  margin: $padding 0;
+}
+
+.subtle {
+  color: $subtle-color;
+}
+
+.relative {
+  position: relative;
+}

@@ -1,23 +1,27 @@
-/**
- Project Mixins
- */
+//**
+// Project Mixins
+//**
 
 // Clear after floats
 @mixin clearfix {
-  zoom:1;
-  &:before, &:after {
-    content: "\0020"; 
-    display: block; 
-    height: 0; 
-    overflow: hidden; 
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
   }
+
   &:after {
     clear: both;
   }
 }
 
 // Apply clearfix to this classes by default
-.clearfix, .group{
+.clearfix,
+.group {
   @include clearfix;
 }
 
@@ -25,18 +29,14 @@
 
 
 // Responsive mixins
-@mixin responsive($res)
-{
-  @media screen and (max-width: $res)
-  {
+@mixin responsive($res) {
+  @media screen and (max-width: $res) {
     @content;
   }
 }
 
-@mixin mobilefirst($res)
-{
-  @media screen and (min-width: $res)
-  {
+@mixin mobilefirst($res) {
+  @media screen and (min-width: $res) {
     @content;
   }
 }

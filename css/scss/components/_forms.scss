@@ -1,0 +1,76 @@
+//**
+// Form Elements
+//**
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+input[type=password],
+input[type=number],
+input[type=search],
+textarea {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
+  border-radius: $btn-br;
+  border: 1px solid #ccc;
+  height: $line-height;
+  outline: none;
+  padding: 5px 10px;
+  width: 300px;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+textarea {
+  height: $line-height*3;
+}
+
+form {
+  margin-bottom: $padding;
+
+  // Wrap each form input/element in a field div
+  .field {
+    margin-bottom: $padding/2;
+  }
+
+  // Notes go under the input fields
+  .hint {
+    color: $subtle-color;
+    margin-top: 5px;
+  }
+
+  // Required label
+  .is-required {
+    font-style: italic;
+  }
+
+  // Validation, add error class to the item div
+  .has-error {
+
+    // Validation reason
+    .error-description {
+      color: $danger-color;
+      margin-top: 5px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=phone],
+    input[type=password],
+    input[type=number],
+    input[type=search],
+    textarea {
+      border-color: $danger-color;
+    }
+  }
+}
