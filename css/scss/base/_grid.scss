@@ -53,7 +53,7 @@
   .span10,
   .span11,
   .span12 {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     float: left;
     margin-bottom: 0;
     margin-left: $margin;
