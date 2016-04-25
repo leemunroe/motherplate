@@ -23,13 +23,14 @@ It can be used for a static web project as is, or you can copy the CSS folder in
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Node.js and use Grunt
-Motherplate uses SCSS. This particular repo uses [Grunt](http://gruntjs.com/) to compile the SCSS to CSS.
+Motherplate uses SCSS. This particular repo uses [Grunt](http://gruntjs.com/) to compile the SCSS to CSS and [Bower](http://bower.io/) to manage external dependencies like FontAwesome and Normalize.
 
 You will need [Node.js](https://nodejs.org/download/). 
 
 Open up terminal (or command line) and run the default Grunt task.
 ```
 $ npm install
+$ bower install
 $ grunt
 ```
 
@@ -39,8 +40,6 @@ Grunt will watch for any changes you make to your SCSS files and compile your ne
 A bare bones index.html template.
 
 ## CSS
-* `lib/normalize` This is Normalize, a CSS reset.
-* `lib/icons` This is Font Awesome's CSS stylesheet. Plug and play icons.
 * `base/config` Put all your variables in here e.g. colors, padding, border radius - this helps with consistency across your project.
 * `base/grid` A basic responsive grid system with 12 columns.
 * `base/ie` Any styles that you need to add in order for Internet Explorer to work.

@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
 
 
-    //Sass configuration
+    // Sass configuration
     sass: {
       options: {
         sourceMap: false,
@@ -21,6 +21,20 @@ module.exports = function(grunt) {
         files: {
           'css/main.css': 'css/scss/main.scss'
         }
+      }
+    },
+
+
+
+
+
+    // Copy font awesome fonts into relative project
+    copy: {
+      font_awesome: {
+        expand: true,
+        flatten: true,
+        src: ['bower_components/font-awesome/fonts/*'],
+        dest: 'fonts'
       }
     },
 
@@ -50,12 +64,13 @@ module.exports = function(grunt) {
     //Watches files and folders for us
     watch: {
       files: [
-        '**/*.html',
+        '*.html',
         'js/**/*.js',
         'css/**/*.scss',
         'img/**/*.{png,jpg,gif,svg}'
       ],
       tasks: [
+        'copy',
         'sass',
         'postcss'
       ]

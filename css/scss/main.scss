@@ -1,5 +1,8 @@
 // Reset default browser styles using Normalize
-@import "lib/normalize";
+@import "../../bower_components/normalize-scss/fork-versions/default/_normalize.scss";
+
+// Install FontAwesome for useful icons
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 
 // Import fonts from Google
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
@@ -20,9 +23,6 @@
 @import "components/alerts";
 @import "components/nav";
 @import "components/other";
-
-// Use Font Awesome for icons
-@import "lib/icons";
 
 // Specific project styles, add any section specific sass modules here
 @import "pages/layout";
