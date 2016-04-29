@@ -1,0 +1,21 @@
+{
+  "name": "Motherplate",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Lee Munroe"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/leemunroe/motherplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.6.1",
+    "normalize-scss": "normalize.scss#^4.1.0"
+  }
+}
