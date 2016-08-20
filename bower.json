@@ -1,5 +1,5 @@
 {
-  "name": "Motherplate",
+  "name": "motherplate",
   "description": "",
   "main": "index.html",
   "authors": [
@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "font-awesome": "fontawesome#^4.6.1",
-    "normalize-scss": "normalize.scss#^4.1.0"
+    "normalize-scss": "normalize.scss#^5.0.3"
   }
 }
