@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       font_awesome: {
         expand: true,
         flatten: true,
-        src: ['bower_components/font-awesome/fonts/*'],
+        src: ['node_modules/font-awesome/fonts/*'],
         dest: 'fonts'
       }
     },
