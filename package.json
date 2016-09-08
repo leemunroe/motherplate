@@ -12,5 +12,8 @@
     "grunt-postcss": "^0.5.4",
     "grunt-sass": "^1.0.0",
     "matchdep": "*"
+  },
+  "dependencies": {
+    "normalize-scss": "^5.0.3"
   }
 }
