@@ -23,14 +23,13 @@ It can be used for a static web project as is, or you can copy the CSS folder in
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Node.js and use Grunt
-Motherplate uses SCSS. This particular repo uses [Grunt](http://gruntjs.com/) to compile the SCSS to CSS and [Bower](http://bower.io/) to manage external dependencies like FontAwesome and Normalize.
+Motherplate uses SCSS. This particular repo uses [Grunt](http://gruntjs.com/) to compile the SCSS to CSS and [NPM](https://www.npmjs.com/) to manage external dependencies like FontAwesome and Normalize.
 
 You will need [Node.js](https://nodejs.org/download/). 
 
 Open up terminal (or command line) and run the default Grunt task.
 ```
 $ npm install
-$ bower install
 $ grunt
 ```
 
