@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
 
 
-    //Sass configuration
+    // Sass configuration
     sass: {
       options: {
         sourceMap: false,
@@ -28,7 +28,21 @@ module.exports = function(grunt) {
 
 
 
-    //Use PostCSS Autoprefixer to apply browser prefixes for certain styles
+    // Copy font awesome fonts into relative project
+    copy: {
+      font_awesome: {
+        expand: true,
+        flatten: true,
+        src: ['node_modules/font-awesome/fonts/*'],
+        dest: 'fonts'
+      }
+    },
+
+
+
+
+
+    // Use PostCSS Autoprefixer to apply browser prefixes for certain styles
     postcss: {
       options: {
         map: false,
@@ -42,20 +56,46 @@ module.exports = function(grunt) {
         src: 'css/*.css'
       }
     },
+
+
+
+
+
+    // Server
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: ''
+        }
+      }
+    },
+
+
+
+
+
+    // Open
+    open : {
+      dev : {
+        path: 'http://localhost:9001'
+      }
+    },
  
 
 
 
 
-    //Watches files and folders for us
+    // Watches files and folders for us
     watch: {
       files: [
-        '**/*.html',
+        '*.html',
         'js/**/*.js',
         'css/**/*.scss',
         'img/**/*.{png,jpg,gif,svg}'
       ],
       tasks: [
+        'copy',
         'sass',
         'postcss'
       ]
@@ -64,5 +104,5 @@ module.exports = function(grunt) {
   });
  
   //grunt serve
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['connect', 'open', 'watch']);
 };
