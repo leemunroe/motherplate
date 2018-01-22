@@ -1,13 +1,13 @@
 # Motherplate: A Responsive SCSS Boilerplate for Web Designers
 
-Preview: http://leemunroe.github.io/motherplate/example.html
+Preview: https://leemunroe.github.io/motherplate/example.html
 
 ## What is this?
 This is a bare bones HTML/CSS framework. This is what I'll typically start off most web projects with.
 
 It includes a CSS reset and a bunch of minimal boilerplate styles that should come in useful for any project, including a responsive grid, typography, buttons, icons and forms.
 
-It is not as in depth as something like <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> and doesn't include styled components like <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
+It is not as in depth as something like <a href="https://html5boilerplate.com/">HTML5 Boilerplate</a> and doesn't include styled components like <a href="https://getbootstrap.com/">Bootstrap</a>.
 
 It can be used for a static web project as is, or you can copy the CSS folder into an existing framework (e.g. Rails).
 
@@ -23,7 +23,7 @@ It can be used for a static web project as is, or you can copy the CSS folder in
 This will vary depending on the framework you are using. The following is how to for a basic static website.
 
 ### Install Node.js and use Grunt
-Motherplate uses SCSS. This particular repo uses [Grunt](http://gruntjs.com/) to compile the SCSS to CSS and [NPM](https://www.npmjs.com/) to manage external dependencies like FontAwesome and Normalize.
+Motherplate uses SCSS. This particular repo uses [Grunt](https://gruntjs.com/) to compile the SCSS to CSS and [NPM](https://www.npmjs.com/) to manage external dependencies like FontAwesome and Normalize.
 
 You will need [Node.js](https://nodejs.org/download/). 
 
@@ -74,5 +74,5 @@ As your project grows and you need to add more styles just create new .scss file
 ## Further Documentation ##
 * <a href="http://compass-style.org/">Compass Framework</a>
 * <a href="http://sass-lang.com/">SASS</a>
-* <a href="http://necolas.github.com/normalize.css/">normalize.css</a>
+* <a href="https://necolas.github.io/normalize.css/">normalize.css</a>
 * <a href="http://fontawesome.io/">Font Awesome</a>
