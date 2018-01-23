@@ -56,7 +56,7 @@ A bare bones index.html template.
 * `components/tables` Styles for tables.
 * `pages/home` Styles that are specific to the homepage
 * `pages/layout` Global layout styles e.g. header, footer, logo etc.
-* `main.scss` This brings all the partials together. Compass only compiles files that don't have an underscore
+* `main.scss` This brings all the partials together. 
 
 As your project grows and you need to add more styles just create new .scss files and reference them anywhere in your main.scss file.
 
@@ -72,7 +72,6 @@ As your project grows and you need to add more styles just create new .scss file
 * Included font awesome for icons
 
 ## Further Documentation ##
-* <a href="http://compass-style.org/">Compass Framework</a>
 * <a href="http://sass-lang.com/">SASS</a>
 * <a href="https://necolas.github.io/normalize.css/">normalize.css</a>
 * <a href="http://fontawesome.io/">Font Awesome</a>
